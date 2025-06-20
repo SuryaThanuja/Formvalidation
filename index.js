@@ -361,11 +361,30 @@
 
 
 
+// states
+// // src/index.js
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import App from './App';
 
-// src/index.js
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(<App />);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+
+
+// // task 3
+// import React from "react";
+// import ReactDOM from "react-dom/client";
+// import App from "./App";
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<App />);
+
+
+// mounting
+import React from "react";
+import ReactDOM from "react-dom/client"
+import App from "./App"
+
+const root =ReactDOM.createRoot(document.getElementById("root"))
+root.render(<App/>)

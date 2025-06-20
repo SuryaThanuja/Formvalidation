@@ -116,14 +116,86 @@
 
 
 
-// src/App.js
-import React from 'react';
-import SimpleForm from './SimpleForm';
+// // functional component IN STATES
+// import React,{useState} from "react"
+// function App(){
+//     let [counter,updateCounter]=useState(0)
+//     return(
+//         <>
+//         <h1>Counter Value:{counter}</h1>
+//         <button onClick={()=> {
+//             updateCounter(++counter)
 
-function App() {
-  return <SimpleForm />;
+//         }}>Change</button>
+//         </>
+//     )
+// }
+
+// export default App
+
+
+
+
+// //Class Component
+
+// import React from "react"
+// class App extends React.Component{
+//   state={
+//     counter:0
+//   }
+  
+//   render(){
+//       return(
+//         <>
+//             <h1>Counter Value:{this.state.counter}</h1>
+//             <button onClick={()=>{
+//               this.setState({
+//                 counter:++this.state.counter
+//               })
+//             }
+              
+//             }>Change</button>
+//         </>
+//       )
+//   }
+  
+// }
+// export default App
+
+
+// //task 3
+// import React from "react";
+// import GitHubProfileViewer from "./GitHubProfileViewer";
+
+// function App() {
+//   return <GitHubProfileViewer />;
+// }
+
+// export default App;
+
+
+
+
+// mounting
+
+import React ,{Component} from "react";
+import Child from "./child"
+class App extends Component{
+ constructor(){
+  super()
+  this.state={x:10}
+ }
+  render(){
+  
+    return(
+      <>
+      <h1>Parent Component
+        <Child  data={this.state.x}/></h1>
+      
+      <button onClick={()=>{this.setState({x:this.state.x+10})}}>click</button>
+      </>
+    )
+  } 
+
 }
-
 export default App;
-
-
