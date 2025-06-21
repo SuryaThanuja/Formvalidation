@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  font-family:'Times New Roman', Times, serif;
+  background: linear-gradient(135deg, #e0f7fa, #f0f4f8);
+  margin: 0;
+  padding: 20px;
+  color: #2c3e50;
+  max-width: 900px;
+  margin: auto;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+
+h2, h3 {
+  text-align: center;
+  color: #1e3c72;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+
+form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  animation: fadeIn 0.8s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+form:hover {
+  transform: scale(1.01);
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 6px #3498db55;
+}
+
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+
+button[onclick="logout()"] {
+  background-color: #2c3e50;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+button[onclick="logout()"]:hover {
+  background-color: #1a242f;
+}
+
+
+#countryResult {
+  margin-top: 25px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+  transition: transform 0.3s ease;
+  border-left: 6px solid #3498db;
+}
+
+#countryResult:hover {
+  transform: scale(1.01);
+}
+
+#countryResult img {
+  width: 120px;
+  border-radius: 8px;
+  margin-top: 15px;
+  animation: pulse 2s infinite;
+}
+
+
+#travelList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#travelList li {
+  background: linear-gradient(to right, #dbeaf5, #e4f3fb);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 6px solid #3498db;
+  animation: fadeIn 0.7s ease-in-out;
+  transition: 0.3s ease;
+}
+
+#travelList li:hover {
+  background: #d0ecf7;
+  transform: translateY(-2px);
+}
+
+#travelList li button {
+  background-color: #e74c3c;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+#travelList li button:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+
+/* Search Box */
+#countryInput {
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px 15px;
+  width: calc(100% - 120px);
+  display: inline-block;
+}
+
+button[onclick="searchCountry()"] {
+  padding: 12px 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  #countryInput {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button[onclick="searchCountry()"] {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #travelList li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #travelList li button {
+    margin-top: 10px;
+  }
+
+
+
+  body {
+  animation: fadeInPage 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInPage {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+}
