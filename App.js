@@ -176,26 +176,47 @@
 
 
 
-// mounting
+// // mounting
 
-import React ,{Component} from "react";
-import Child from "./child"
-class App extends Component{
- constructor(){
-  super()
-  this.state={x:10}
- }
-  render(){
+// import React ,{Component} from "react";
+// import Child from "./child"
+// class App extends Component{
+//  constructor(){
+//   super()
+//   this.state={x:10}
+//  }
+//   render(){
   
-    return(
-      <>
-      <h1>Parent Component
-        <Child  data={this.state.x}/></h1>
+//     return(
+//       <>
+//       <h1>Parent Component
+//         </h1>
+//         <Child  data={this.state.x}/>
       
-      <button onClick={()=>{this.setState({x:this.state.x+10})}}>click</button>
-      </>
-    )
-  } 
+//       <button onClick={()=>{this.setState({x:this.state.x+10})}}>click</button>
+//       </>
+//     )
+//   } 
 
+// }
+// export default App;
+
+
+
+
+
+
+
+
+import React from 'react';
+import TaskManager from './TaskManager';
+
+function App() {
+  return (
+    <div className="App">
+      <TaskManager />
+    </div>
+  );
 }
+
 export default App;

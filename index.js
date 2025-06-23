@@ -381,10 +381,27 @@
 // root.render(<App />);
 
 
-// mounting
+// // mounting
+// import React from "react";
+// import ReactDOM from "react-dom/client"
+// import App from "./App"
+
+// const root =ReactDOM.createRoot(document.getElementById("root"))
+// root.render(<App/>)
+
+
+
+
+
+
+
+
+//project in lifecycles
+
 import React from "react";
 import ReactDOM from "react-dom/client"
 import App from "./App"
+import TaskManager from "./TaskManager";
 
 const root =ReactDOM.createRoot(document.getElementById("root"))
 root.render(<App/>)
