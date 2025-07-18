@@ -1,0 +1,23 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "React Basics",
+      "description": "Intro to React"
+    },
+    {
+      "id": 2,
+      "title": "Advanced React",
+      "description": "Hooks and Context"
+    }
+  ],
+  "enquiries": [
+    {
+      "name": "surya",
+      "email": "surya@gmail.com",
+      "courseId": 1,
+      "courseTitle": "React Basics",
+      "id": 1
+    }
+  ]
+}
