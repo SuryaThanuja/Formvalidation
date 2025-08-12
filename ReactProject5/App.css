@@ -1,0 +1,31 @@
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.dice-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.number {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.roll-btn {
+  background: #4cafef;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.roll-btn:hover {
+  background: #2e8dd5;
+}
